@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<ImageView 
+	    android:layout_width="match_parent"
+    	android:layout_height="300dp"
+    	android:layout_margin="10dip"
+		android:contentDescription="@string/app_name"
+		android:id="@+id/imgView"
+	/>
+    
+	<RadioGroup 
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+   	>
+		<RadioButton 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Black Preview"
+    		android:textColor="@android:color/black"
+    		android:id="@+id/rdb_black"
+    		android:checked="true"
+    		android:layout_weight="0.5"
+		/>
+		<RadioButton 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="White Preview"
+    		android:textColor="@android:color/black"
+    		android:id="@+id/rdb_white"
+    		android:layout_weight="0.5"
+		/>
+	</RadioGroup>
+	
+	<LinearLayout 
+		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+	>
+		<Button 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Front Cam"
+    		android:onClick="onFrontClick"
+    		android:layout_weight="0.5"
+		/>
+		<Button 
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Back Cam"
+    		android:onClick="onBackClick"
+    		android:layout_weight="0.5"
+		/>
+    </LinearLayout>
+</LinearLayout>
